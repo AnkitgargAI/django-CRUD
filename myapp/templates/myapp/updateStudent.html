@@ -1,0 +1,18 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-4 center">
+        <h4 class="text-center alert alert-info"> Update Student {{id}}</h4>
+        <form action="" method = "POST"> 
+        {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="Submit" class="btn btn-success"/>
+        </form>
+    </div>
+
+    
+</div>
+
+
+{% endblock content %}
